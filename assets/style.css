@@ -1,0 +1,157 @@
+/*------------------------------------------------------------------------------
+-- // RESETS
+------------------------------------------------------------------------------*/
+
+html { box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html, body, div, span,
+header, nav, main, article, section, aside, footer,
+h1, h2, h3, h4, h5, h6,
+p, strong, em, b, i, u, a, ul, ol, li,
+blockquote, pre, code, img, audio, video,
+table, caption, thead, tbody, tfoot, tr, th, td,
+form, input {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+}
+
+header, nav, main, article, section, aside, footer,
+blockquote, pre, img, audio, video,
+table, form {
+  display: block;
+}
+
+/* -----------------------------------------------------------------------------
+-- // BASE
+----------------------------------------------------------------------------- */
+
+body {
+  background-color: #002b36;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.2;
+  color: #839496;
+}
+
+/* -----------------------------------------------------------------------------
+-- // BASIC ELEMENTS
+----------------------------------------------------------------------------- */
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 1;
+  color: #586e75;
+}
+
+p {
+  margin-bottom: 1em;
+  text-align: left;
+}
+p:last-child { margin-bottom: 0; }
+
+em { font-style: italic; }
+
+strong { font-weight: bold; }
+
+a {
+  color: #93a1a1;
+  text-decoration: none;
+  -webkit-transition: all .25s ease-in-out;
+     -moz-transition: all .25s ease-in-out;
+      -ms-transition: all .25s ease-in-out;
+       -o-transition: all .25s ease-in-out;
+          transition: all .25s ease-in-out;
+}
+a:hover { color: #2aa198; }
+
+/* -----------------------------------------------------------------------------
+-- // SEARCH
+----------------------------------------------------------------------------- */
+
+input {
+  margin-bottom: 2rem;
+  padding-bottom: .25em;
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #073642;
+  outline: none;
+  background-color: #002b36;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 15px;
+  color: #839496;
+  -webkit-transition: all .25s ease-in-out;
+     -moz-transition: all .25s ease-in-out;
+      -ms-transition: all .25s ease-in-out;
+       -o-transition: all .25s ease-in-out;
+          transition: all .25s ease-in-out;
+}
+input::placeholder { color: #586e75; }
+input:focus {
+  border-bottom-color: #93a1a1;
+  color: #93a1a1;
+}
+
+/*------------------------------------------------------------------------------
+-- // LIST LINKS
+------------------------------------------------------------------------------*/
+
+.list-links { list-style-type: none; }
+.list-links ul:first-child { margin-top: 2rem; }
+.list-links ul:last-child { margin-bottom: 0; }
+
+.list-links li {
+  display: inline-block;
+  margin-right: 2px;
+  margin-bottom: 2px;
+}
+.list-links li:first-child {
+  margin-right: 1ch;
+  width: 8ch;
+  border-right: 2px solid #073642;
+}
+
+.list-links ul:hover li:first-child { border-right-color: #93a1a1; }
+
+.list-links ul:nth-child(1) li:first-child{ color: #268bd2; }
+.list-links ul:nth-child(2) li:first-child{ color: #dc322f; }
+.list-links ul:nth-child(3) li:first-child{ color: #6c71c4; }
+.list-links ul:nth-child(4) li:first-child{ color: #cb4b16; }
+.list-links ul:nth-child(5) li:first-child{ color: #b58900; }
+.list-links ul:nth-child(6) li:first-child{ color: #859900; }
+.list-links ul:nth-child(7) li:first-child{ color: #d33682; }
+
+/*------------------------------------------------------------------------------
+-- // LAYOUT
+------------------------------------------------------------------------------*/
+
+.wrapper {
+  margin: 4rem auto;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  max-width: 36em;
+}
+
+.site-header { margin-bottom: 4rem; }
+
+.site-main {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.site-footer {
+  margin-top: 4rem;
+  color: #586e75;
+}

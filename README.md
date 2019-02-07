@@ -11,7 +11,7 @@ From [/r/startpages](https://www.reddit.com/r/startpages):
 - Quick access to personal favourite links
 - Utilizes the dark [Solarized](http://ethanschoonover.com/solarized) colour palette
 - Display current date and time
-- Supports commands (see below for more details)
+- Supports [commands](https://github.com/haothitran/launch#commands)
 
 ## Screenshot
 
